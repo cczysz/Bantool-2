@@ -43,27 +43,11 @@ Install Python3.8 from the Microsoft Store: <https://www.microsoft.com/en-us/p/p
 
 Download the Bantool-2 code as a zip file, and unpack.
 
-Open a cmd.exe window: `Windows_Key + r` and type `cmd` and hit Enter.
+Double click the `windows_install.bat` file.
 
-Ensure Python3.8 is installed: `python3.8 --version`
+First, a virtualenv directory will be created under a `venv\` directory.
 
-Install the `virtualenv` Python package: `python3.8 -m pip install virtualenv`
-
-Change directories to the unzipped folder: `cd Downloads\\Bantool-2`, for example.
-
-Create a new virtualenv (an isolated Python installation): `python3.8 -m virtualenv venv`
-
-This will create a new directory named `venv` with various Python files inside.
-
-"Activate" the new virtualenv, and ensure it is being used:
-
-`.\\venv\\Scripts\\activate`
-
-The prompt should now show `(venv)` at the beginning.
-
-Run `pip install .` to install the `bantool` program.
-
-Run `bantool`, this should show a warning message about an invalid config.
+Then, a `config.json` file and a `namelist.txt` file will be created, if those do not already exist.
 
 <li><h4>edit the config file:</h4>
 <ul>
@@ -76,7 +60,7 @@ Run `bantool`, this should show a warning message about an invalid config.
 </ul></li>
 
 <li>The amount of browser windows you should put set is dependent on your computer, but 4 is reccomended</li>
-<li>After filling the namelist and setting the config run `bantool`</li>
+<li>After filling the namelist and setting the config double-click the `windows_run_bantool.bat` file</li>
 </ol>
 
 
