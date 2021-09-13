@@ -51,12 +51,15 @@ Then, a `config.json` file and a `namelist.txt` file will be created, if those d
 
 <li><h4>edit the config file:</h4>
 <ul>
-<li>"twitch_channels": ["NAME OF CHANNEL", "NAME OF SECOND CHANNEL", "NAME OF THIRD CHANNEL"],</li>
-<li>"command": true/false,</li>
-<li>"Number_of_browser_windows": 1,</li>
+<li>"twitch_channels": ["NAME OF CHANNEL", "NAME OF SECOND CHANNEL", "NAME OF THIRD CHANNEL"]</li>
+<li>"ban": true/false</li>
+<li>"unban": true/false</li>
+<li>"block": true/false</li>
+<li>"unblock": true/false</li>
+<li>"Number_of_browser_windows": 1</li>
 <li>"Firefox_profile": "NAME OF PROFILE FOLDER"</li>
 <li>"Greeting Emote": the emote it should put in chat once the browser is ready to work</li>
-<li>"Chunk size": The number of names after wich a browser window should restart and save its progress (to fix memory leaks)</li>
+<li>"Chunk size": The number of names after which a browser window should restart and save its progress (to fix memory leaks)</li>
 </ul></li>
 
 <li>The amount of browser windows you should put set is dependent on your computer, but 4 is reccomended</li>
