@@ -5,6 +5,8 @@ description = "Twitch bot ban tool"
 authors = ["Your Name <you@example.com>"]
 packages = [
     { include = "bantool", from = "src" },
+    { include = "validator", from = "src" },
+    { include = "csv_exporter", from = "src" },
 ]
 
 [tool.poetry.dependencies]
@@ -28,6 +30,8 @@ tox-poetry = "^0.4.1"
 
 [tool.poetry.scripts]
 bantool = 'bantool.__main__:main'
+validator = 'validator.validator:main'
+exporter = 'csv_exporter.csv_exporter:main'
 
 [tool.black]
 line-length = 88
